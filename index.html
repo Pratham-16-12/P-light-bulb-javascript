@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/index.d6a23f5b.css">
+    </head>
+    <body class="bg-blue-200">
+        <header class="h-vh20"></header>
+        <main class=" flex-col items-center h-vh60 space-y-20">
+            <div id="heading" class="flex justify-center">
+                <h1 class="flex items-center text-2xl text-white h-20 w-auto bg-orange-400 border-2 rounded-lg border-black p-1 sm:text-5xl">Can you turn on the blub?</h1>
+            </div>
+            <div class="flex items-center justify-center h-60 w-full" name="Bulb">
+                <img
+                    id="blub"
+                    src="assets/blub off.6daa0f4b.png"
+                    alt=""
+                    class="w-96"
+                >
+            </div>
+            <div id="button" class="flex justify-center space-x-40">
+                <button id="button1" class="text-5xl bg-yellow-600 text-white h-16 w-auto p-1 border-2 border-black rounded-lg">On</button>
+                <button id="button2" class="text-5xl bg-yellow-600 text-white h-16 w-auto p-1 border-2 border-black rounded-lg">Off</button>
+            </div>
+        </main>
+        <footer></footer>
+        <script>
+            function onclickf (){
+              document.getElementById("blub").src='assets/blub on.png';
+            }
+            function offclickf (){
+              document.getElementById("blub").src='assets/blub off.6daa0f4b.png';
+            }
+            let onnclick = document.getElementById("button1");
+            let offclick = document.getElementById("button2");
+            onnclick.onclick= onclickf;
+            offclick.onclick= offclickf;
+        </script>
+    </body>
+</html>
